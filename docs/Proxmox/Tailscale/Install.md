@@ -2,6 +2,28 @@
 title: Install Tailscale
 ---
 
+
+## Installing on the Proxmox Shell
+
+:::danger[WARNING]
+Make sure you read and understand the commands you execute on the Shell.
+:::
+
+First download Tailscale:
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+```
+
+Installing on the shell requires a modified version of the `up` command. This prevents Tailscale from overwriting your DNS, which would render LXC's and VM's using `HOST DNS Settings` unable to resolve the `100.100.100.100` dns and failing all DNS resolving.
+
+The common workaround at this point is ONLY on the shell to run.
+```bash
+tailscale up --accept-dns=false
+```
+
+This enables Tailscale for connections while rejecting the use of its internal DNS.
+
 ## Using Proxmox Scripts
 
 :::info
@@ -52,23 +74,3 @@ tailscale up
 
 It should work seamlessly with Magic DNS support.
 
-## Installing on the Proxmox Shell
-
-:::danger[WARNING]
-Make sure you read and understand the commands you execute on the Shell.
-:::
-
-First download Tailscale:
-
-```bash
-curl -fsSL https://tailscale.com/install.sh | sh
-```
-
-Installing on the shell requires a modified version of the `up` command. This prevents Tailscale from overwriting your DNS, which would render LXC's and VM's using `HOST DNS Settings` unable to resolve the `100.100.100.100` dns and failing all DNS resolving.
-
-The common workaround at this point is ONLY on the shell to run.
-```bash
-tailscale up --accept-dns=false
-```
-
-This enables Tailscale for connections while rejecting the use of its internal DNS. Keep in mind that magic DNS naming won
