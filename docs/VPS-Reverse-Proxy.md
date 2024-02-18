@@ -8,6 +8,9 @@ Your goal is to share local services like a [Homepage](https://gethomepage.dev) 
 
 ## Why not Cloudflare Tunnels?
 
+![IMAGE](https://storj.aaronburt.co.uk/BEAST/1708243673/cf_bg.png)
+***Example of how Cloudflare Tunnel works***
+
 Cloudflare Tunnels is a convenient deployment service but has some noteworthy drawbacks.
 Firstly, Cloudflare enforces bandwidth limits in its Terms of Service, stating that users must not exceed allocated bandwidth to avoid causing an undue burden on the services and connected networks. However, the specific bandwidth limit is arbitrary and at the discretion of Cloudflare.
 
@@ -156,7 +159,7 @@ After updating the account credentials, you're good to go with the User Interfac
 
 ## Tailscale ACL Policies 
 
-Access Control List are very easier to make mistakes with, You are attempting to narrowly allow as much access to machines as deemed necessary without breaking things, it can sometimes be an extremely fine line. 
+[Access Control Lists](https://login.tailscale.com/admin/acls/file) are very easier to make mistakes with, You are attempting to narrowly allow as much access to machines as deemed necessary without breaking things, it can sometimes be an extremely fine line. 
 
 By default, Tailscale associates each machine with your email address, visible in the admin panel, indicating ownership. To make ACL policies effective, we must disconnect your email from the machine.
 

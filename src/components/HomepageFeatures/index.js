@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Easy to Understand',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I Write documentation to be easy to understand regardless of Skill level.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Support offered',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+      <>  
+        If you believe the documentation doesn't address a certain item or quirk shoot me an message and i will reply.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Ad-less',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I don't intend to make money via Advertising or blocking off documentation, i believe that the best way to make Self-hosting a viable alternative is Free, Open and reliable documentation.
       </>
     ),
   },

@@ -9,11 +9,7 @@ If you want a more technical explanation, Proxmox uses a modified Debian Linux d
 
 :::tip 
 On the Proxmox server, you can access the local UI directly by opening a web browser and entering https://ipaddress:8006.
-
-
 :::
-
-
 
 ### UI Screenshot
 
