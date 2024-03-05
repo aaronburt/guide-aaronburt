@@ -30,8 +30,6 @@ Addressing the first three problems with Cloudflare Tunnels:
 
 3. Service Reliability: Unlike Cloudflare's potential for abrupt termination, managing your deployment on a VPS provides greater autonomy. You are not solely reliant on Cloudflare's goodwill, reducing the risk of unexpected service interruptions or discontinuations.
 
-
-
 ## Requirements
 
 ### Trustworthy Debian/Ubuntu VPS with Root Access
@@ -48,7 +46,6 @@ apt-get update && apt-get upgrade -y
 ```
 
 ### A Tailscale account 
-
 
 You'll need a [Tailscale](https://tailscale.com/) account.
 
