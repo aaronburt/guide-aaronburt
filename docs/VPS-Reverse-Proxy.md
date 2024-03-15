@@ -185,7 +185,7 @@ Finally, specify where the tags are allowed to connect, including the option to 
 	{
 		"action": "accept",
 		"src":    ["tag:external"],
-		"dst":    ["100.000.000.102:53", "local:*"],
+		"dst":    ["100.000.000.102:53", "tag:local:*"],
 	},
 ]
 ```
