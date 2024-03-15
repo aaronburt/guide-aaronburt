@@ -23,7 +23,7 @@ You will need:
 I'm going to assume that you have some basic knowledge of Docker compose. Firstly, you need to use this basic YAML file. It's possible this YAML file could be improved, and I am open to suggestions.
 
 
-You need to make two small changes to this YAML file for it to work correctly. First, generate an auth key from the Tailscale Admin panel. It's helpful to set it to be reusable and add it to the TS_AUTHKEY variable in the Tailscale container config below. Second, provide valid Gluetun credentials for a VPN that is supported. Most major vendors of VPNs are supported out of the box with minimal configuration.
+You need to make two small changes to this YAML file for it to work correctly. First, generate an auth key from the Tailscale Admin panel. It's helpful to set it to be reusable and add it to the TS_AUTHKEY variable in the Tailscale container config below. Second, provide valid Gluetun credentials for a VPN that is supported. Most major vendors of VPNs are supported out of the box with minimal configuration. 
 
 
 
@@ -118,4 +118,4 @@ If you want to be able to check if it’s working later on down the line, then a
 *.iplocation.io iplocation.io 
 ```
 
-Select the ACL and use the 'connector' ACL and save. Perfect! You have successfully set up a VPN to bypass Twitch AdBlock for everyone who happens to use your Tailnet as well.
+Select the ACL and use the 'connector' ACL and save. Perfect! You have successfully set up a VPN to bypass Twitch AdBlock for everyone who happens to use your Tailnet as well. You may need to disconnect and reconnect your Tailscale client to update the approvers, this is perhaps a bug with App connectors now. 
