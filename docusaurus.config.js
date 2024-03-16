@@ -89,10 +89,6 @@ const config = {
                 href: 'https://github.com/aaronburt',
               },
               {
-                label: 'Gitea',
-                href: 'https://git.aaronburt.co.uk',
-              },
-              {
                 label: 'Instagram',
                 href: 'https://instagram.com/aaronmichaelburt',
               },
