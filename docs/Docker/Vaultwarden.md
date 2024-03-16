@@ -3,8 +3,6 @@
 These containers manage a secure password storage system using Vaultwarden. The "vaultwarden" container functions as the main server for password storage and access, while the "vaultwarden-backup" container ensures regular backups of this data, maintaining its security and integrity.
 
 
-
-
 ### ADMIN_TOKEN
 
 Admin token is the password for the /admin panel of Vaultwarden. This is an extremely sensitive area there setting a very strong password is very reccommended. This isn't strictly required so if you don't need the admin panel you could always remove that line and not have the /admin panel enabled at all. 
