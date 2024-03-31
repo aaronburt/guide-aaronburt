@@ -13,4 +13,4 @@ On the Proxmox server, you can access the local UI directly by opening a web bro
 
 ### UI Screenshot
 
-![image](https://storj.aaronburt.co.uk/BEAST/1707870399/brave_VpfR6uqBZL.png)
+![image](/img/proxmox-shell.webp)
