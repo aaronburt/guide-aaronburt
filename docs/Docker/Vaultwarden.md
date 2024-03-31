@@ -15,6 +15,12 @@ echo -n "secretPasswordForAdminToken" | argon2 "$(openssl rand -base64 32)" -e -
 This will echo out the argon2 hash of the password, place the hash in the `ADMIN_TOKEN` variable but where you see a $ sign you need to add an extra one otherwise Docker will think its a environment variable and it will break.
 
 
+Download the docker-compose file directly into your current directory. 
+
+```bash
+curl -O https://guide.aaronburt.co.uk/source/vaultwarden/docker-compose.yml
+```
+
 ```yaml
 version: '3'
 
