@@ -9,6 +9,12 @@ Be sure to change the volume disk mount to exactly where you want you Plex libra
 
 ### Plex without GPU acceleration
 
+Download the docker-compose file directly into your current directory. 
+
+```bash
+curl -O https://guide.aaronburt.co.uk/source/plex/docker-compose.yml
+```
+
 This is the standard installation for Plex, this will use CPU processing.
 
 ```yaml
