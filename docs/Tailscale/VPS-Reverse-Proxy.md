@@ -93,15 +93,15 @@ Setting up Tailscale is a simple two line execution, run:
 ```bash
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
-This command will add the repos, and install the tailscale application including the required wireguard client. You now need to run the following command to start the Tailscale client.
+This command will add the repos, and install the tailscale application including the required WireGuard client. You now need to run the following command to start the Tailscale client.
 
 ```bash
 tailscale up
 ```
 
-Once you have succesfully authenticated the machine you can access the list of the machines from the [Tailscales](https://login.tailscale.com) Admin panel. You need need to install the corresponding Tailscale client on the home server to allow both machines to connect to each other via an encrypted Wireguard tunnel.
+Once you have successfully authenticated the machine you can access the list of the machines from the [Tailscales](https://login.tailscale.com) Admin panel. You need need to install the corresponding Tailscale client on the home server to allow both machines to connect to each other via an encrypted Wireguard tunnel.
 
-To verfiy the machines are both added either consult the Admin panel or run `tailscale status` from either machine. Following on from that just run a quick test by pinging the other machine for example: 
+To verify the machines are both added either consult the Admin panel or run `tailscale status` from either machine. Following on from that just run a quick test by pinging the other machine for example: 
 
 ```bash 
 tailscale ping vps-server-machine-name-can-be-seen-from-admin-panel
@@ -109,7 +109,7 @@ tailscale ping vps-server-machine-name-can-be-seen-from-admin-panel
 If you have connected to each other then that great!
 
 :::tip
-If you see that the ping was succeessful but it mentions a (via Derp); thats ok, That means its being relayed while Tailscale tries to work out a direct connection, the information is still encrypted. Clients normally should find a direct route to each other within a few hours at most, if its still failing after that then you might need to consult a support forum.
+If you see that the ping was successful but it mentions a (via Derp); that's ok, That means its being relayed while Tailscale tries to work out a direct connection, the information is still encrypted. Clients normally should find a direct route to each other within a few hours at most, if its still failing after that then you might need to consult a support forum.
 :::
 
 ## Setup Nginx Proxy Manager
