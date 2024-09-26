@@ -88,10 +88,6 @@ const config = {
                 label: 'Github',
                 href: 'https://github.com/aaronburt',
               },
-              {
-                label: 'Instagram',
-                href: 'https://instagram.com/aaronmichaelburt',
-              },
             ],
           },
         ],
