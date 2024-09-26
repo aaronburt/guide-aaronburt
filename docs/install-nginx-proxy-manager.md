@@ -16,7 +16,7 @@ I've not noticed a performance difference depending on the install but technical
 Double check the commands from their official sources, syntax and commands can change from update to update. 
 :::
 
-### Install via Docker 
+## Install via Docker 
 
 Install Docker to the that machine with this one-liner
 ```sh
@@ -54,6 +54,11 @@ docker ps
 ```
 
 You should see a NginxProxyManager that is (Started), Goto [Post install](#post-install-setup)
+
+
+### Example
+<video src="/video/npm-install-output.mp4" controls="true" style={{width: "100%"}}></video>
+
 
 ---
 
