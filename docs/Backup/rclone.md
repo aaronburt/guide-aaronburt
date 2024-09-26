@@ -3,11 +3,7 @@ title: RClone Backup with Cronjob
 ---
 
 
-:::danger
-This tutorial isn't finished
-:::
-
-Let me introduce you to a fast and easy method for backing up your data to the cloud. In this example, I'll demonstrate how to back up local Vaultwarden backups to the cloud storage of your choice. I will be backing up Vaultwarden to Google Drive.
+Let me introduce you to a fast and easy method for backing up your data to the cloud. 
 
 :::warning
 Instructions are based on Linux bash shell, therefore it may vary if you use powershell or sh
@@ -37,3 +33,13 @@ sudo -v ; curl https://rclone.org/install.sh | sudo bash
 ```bash
 rclone copy ./backup GoogleDriveRemoteName: -v
 ```
+
+## Cronjob
+
+Run ```crontab -e``` and then edit with the editor of your choice and insert the following on a new line.
+
+```bash
+0 0 * * * /usr/bin/rclone copy ./backup GoogleDriveRemoteName: -v >> /var/log/backup.txt 2>&1
+```
+
+This will invoke the rclone copy command to run once per day at 00:00 and log the output to backup.txt 
