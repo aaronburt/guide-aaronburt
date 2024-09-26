@@ -2,12 +2,35 @@
 title: Install Tailscale
 ---
 
-
-## Installing on the Proxmox Shell
-
 :::danger[WARNING]
-Make sure you read and understand the commands you execute on the Shell.
+Make sure you read and understand the commands you executed, you shouldn't trust commands on the Internet if you don't know what they're doing.
 :::
+
+### Installing on the Linux
+
+First download Tailscale:
+
+```bash
+sudo curl -fsSL https://tailscale.com/install.sh | sh
+```
+
+This commands fetchs the contents of the install.sh script and runs it, you can instead download the file and run it if you don't like the piping into sh
+
+
+next run the following command as sudo or as root
+
+```bash
+sudo tailscale up
+```
+
+---
+
+## Proxmox
+
+
+### Installing on Proxmox's Shell
+
+
 
 First download Tailscale:
 
@@ -24,7 +47,7 @@ tailscale up --accept-dns=false
 
 This enables Tailscale for connections while rejecting the use of its internal DNS.
 
-## Using Proxmox Scripts
+### Using Proxmox Scripts to install an LXC with Tailscale
 
 :::info
 This Proxmox script is required to be ran on the WebUI Shell.

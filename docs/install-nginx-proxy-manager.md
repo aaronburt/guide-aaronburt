@@ -1,5 +1,5 @@
 --- 
-title: Install NPM
+title: Install Nginx Proxy Manager
 ---
 
 :::danger
@@ -53,7 +53,11 @@ If you run
 docker ps
 ```
 
-You should see a NginxProxyManager that is (Started)
+You should see a NginxProxyManager that is (Started), Goto [Post install](#post-install-setup)
+
+---
+
+## Proxmox
 
 ### Install via Proxmox Scripts 
 
@@ -67,6 +71,7 @@ Make sure to install Docker compose when prompted.
 bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/ct/nginxproxymanager.sh)"
 ```
 
+---
 
 ## Post-install setup 
 

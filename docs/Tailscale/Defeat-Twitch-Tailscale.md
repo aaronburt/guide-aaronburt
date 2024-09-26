@@ -1,10 +1,7 @@
 ---
 title: Defeat Twitch Ads with Tailscale 
+slug: defeat-twitch-ads
 ---
-
-:::caution 
-This page is being revised and isn't currently finished, while the guide will work it might miss some nuance.
-:::
 
 Twitch is infamous in the last few years for the increasing number of video advertisements being shown towards non-paying users. 
 Today I will show you how to fully defeat these adverts in a few short steps. 

@@ -1,5 +1,6 @@
 ---
 title: VPS Reverse Proxy with Tailscale
+slug: vps-reverse-proxy
 ---
 
 ## Introduction

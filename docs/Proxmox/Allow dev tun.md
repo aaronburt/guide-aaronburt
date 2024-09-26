@@ -1,5 +1,5 @@
 ---
-title: Allow /dev/tun on LXC
+title: Allow /dev/tun on Proxmox LXC
 ---
 
 If you've encountered the "ERROR unix opening TUN device file: operation not permitted" while trying to install Gluetun, Tailscale, or any other VPN agent on an LXC (Linux Container), you are not the only one. This error occurs because, by default, an LXC lacks permission to access the `TUN` device required for establishing VPN connections. To resolve this, you'll need to grant the LXC access to these devices. Here's how:
