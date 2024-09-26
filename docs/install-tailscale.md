@@ -6,6 +6,7 @@ title: Install Tailscale
 Make sure you read and understand the commands you executed, you shouldn't trust commands on the Internet if you don't know what they're doing.
 :::
 
+
 ### Installing on the Linux
 
 First download Tailscale:
@@ -22,6 +23,12 @@ next run the following command as sudo or as root
 ```bash
 sudo tailscale up
 ```
+
+#### Example video
+
+<video src="/video/tailscale-up-example.mp4" controls="true" style={{width: "100%"}}></video>
+
+Once you visit the url you will need to login and authenticate the device and then it should be connected.
 
 ---
 

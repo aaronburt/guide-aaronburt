@@ -11,7 +11,7 @@ const config = {
   title: 'Aaron\'s Guide',
   tagline: 'Simple guide for smart people',
   favicon: 'img/favicon.ico',
-
+  staticDirectories: ['static'],
   // Set the production url of your site here
   url: 'https://guide.aaronburt.co.uk',
   // Set the /<baseUrl>/ pathname under which your site is served
