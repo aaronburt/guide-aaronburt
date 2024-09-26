@@ -3,7 +3,7 @@ title: Install Nginx Proxy Manager
 ---
 
 :::danger
-Regardless of you installation choice, you must follow the Post-install setup to change the default username and password. You risk exposing your entire network to a threat actor if this is not changed.
+Regardless of your installation choice, you MUST follow the Post-install setup to change the default username and password. You risk exposing your entire network to a threat actor if this is not changed.
 :::
 
 
