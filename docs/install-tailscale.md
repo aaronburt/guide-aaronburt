@@ -15,7 +15,7 @@ First download Tailscale:
 sudo curl -fsSL https://tailscale.com/install.sh | sh
 ```
 
-This commands fetchs the contents of the install.sh script and runs it, you can instead download the file and run it if you don't like the piping into sh
+This commands fetches the contents of the install.sh script and runs it, you can instead download the file and run it if you don't like the piping into sh
 
 
 next run the following command as sudo or as root
@@ -28,7 +28,7 @@ sudo tailscale up
 
 <video src="/video/tailscale-up-example.mp4" controls="true" style={{width: "100%"}}></video>
 
-Once you visit the url you will need to login and authenticate the device and then it should be connected.
+Once you visit the url you will need to log in and authenticate the device, and then it should be connected.
 
 ---
 
@@ -57,7 +57,7 @@ This enables Tailscale for connections while rejecting the use of its internal D
 ### Using Proxmox Scripts to install an LXC with Tailscale
 
 :::info
-This Proxmox script is required to be ran on the WebUI Shell.
+This Proxmox script is required to be run on the WebUI Shell.
 :::
 
 To utilize Proxmox scripts' Tailscale installation for an LXC:
@@ -86,7 +86,7 @@ lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
 ```
 
 :::tip
-LXC's by default come with the updates provisions from the image used, its reccommend to ensure they are updated for security.
+LXC's by default come with the updates provisions from the image used, it's recommended to ensure they are updated for security.
 :::
 
 

@@ -7,13 +7,13 @@ Regardless of your installation choice, you MUST follow the Post-install setup t
 :::
 
 
-Nginx Proxy Manager is a WebUI added on top of the normal Nginx experience, it allows for far more easier control and simpler management of the routing and streams compared to doing in the config files.
+Nginx Proxy Manager is a WebUI added on top of the normal Nginx experience, it allows for far easier control and simpler management of the routing and streams compared to doing in the config files.
 
 It runs in Docker or via LXC with Proxmox scripts. 
-I've not noticed a performance difference depending on the install but technically the docker instance would require two layers of virtualisation; LXC -> Docker -> Nginx, the Proxmox script variant also doesn't require each port to be opened if you stray from just HTTP/HTTPS routing. Dockers primary advantage is that you pick up the entire install and move it to a completely difference machine even non Proxmox and it works. (A standard Docker advantage). Also updating is very simple with a simple `docker compose pull`
+I've not noticed a performance difference depending on the installation but technically the docker instance would require two layers of virtualization; LXC -> Docker -> Nginx, the Proxmox script variant also doesn't require each port to be opened if you stray from just HTTP/HTTPS routing. Dockers primary advantage is that you pick up the entire install and move it to a different machine even non Proxmox and it works. (A standard Docker advantage). Also updating is very simple with a simple `docker compose pull`
 
 :::tip
-Double check the commands from their official sources, syntax and commands can change from update to update. 
+Double-check the commands from their official sources, syntax and commands can change from update to update. 
 :::
 
 ## Install via Docker 
@@ -23,7 +23,7 @@ Install Docker to the that machine with this one-liner
 curl https://get.docker.com | sh
 ```
 
-Next create a folder and place the docker-compose.yml inside. Be sure to double check this YML to ensure that its correct according to [here](https://nginxproxymanager.com/guide/#quick-setup)
+Next create a folder and place the docker-compose.yml inside. Be sure to double-check this YML to ensure that its correct according to [here](https://nginxproxymanager.com/guide/#quick-setup)
 
 ```yml
 version: '3.8'
@@ -53,7 +53,7 @@ If you run
 docker ps
 ```
 
-You should see a NginxProxyManager that is (Started), Goto [Post install](#post-install-setup)
+You should see a NginxProxyManager that is (Started), Goto post install.
 
 
 ### Example
@@ -78,11 +78,11 @@ bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/ct/nginxproxyma
 
 ---
 
-## Post-install setup 
+## Post-install setup
 
 The Admin panel should now be available at the ip_address_of_machine:81 and port 80 should return a congratulations page. 
 
-By default the application will ship with a default username and default password, this is majorly insecure to leave as default options even if your port 81 isn't open. 
+By default, the application will ship with a default username and default password, this is majorly insecure to leave as default options even if your port 81 isn't open. 
 ```
 Email:    admin@example.com
 Password: changeme
