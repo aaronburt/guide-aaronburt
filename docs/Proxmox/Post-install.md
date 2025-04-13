@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 
-After completing the standard installation, execute the Post-install script from [here](https://tteck.github.io/Proxmox/).
+After completing the standard installation, execute the Post-install script from [here](https://community-scripts.github.io/ProxmoxVE/).
 
 The script removes subscription-required repositories, replaces them with free alternatives, and updates all repositories, ensuring the latest versions. It also makes minor CSS tweaks to eliminate Proxmox 'reminders' for a subscription. 
 
@@ -14,7 +14,7 @@ Run this script in the **Proxmox shell via the WebUI**, as it can extract variab
 
 
 ```
-bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pve-install.sh)"
 ```
 
 #### Optional
