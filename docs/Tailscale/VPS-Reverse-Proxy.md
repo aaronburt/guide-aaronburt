@@ -2,6 +2,10 @@
 title: VPS Reverse Proxy with Tailscale
 ---
 
+:::tip[Conideration]
+This guide is for those who want to share their local services with the internet without exposing their personal network IP address. Since this guide's creation date, a alternative approuch using [Pangolin](https://github.com/fosrl/pangolin) has been created. It's recommended to use Pangolin as it is more secure and has a better user experience. I will continue maintaining this guide for users looking to utilize the old method
+:::
+
 ## Introduction
 
 Your goal is to share local services like a [Homepage](https://gethomepage.dev) but you don't want to use Cloudflare Tunnels or expose your personal network IP address to the internet. You might be also be unable to do so as your network is inside a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT)
