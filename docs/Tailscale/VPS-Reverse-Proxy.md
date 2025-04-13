@@ -2,7 +2,7 @@
 title: VPS Reverse Proxy with Tailscale
 ---
 
-:::tip[Conideration]
+:::tip[Consideration]
 This guide is for those who want to share their local services with the internet without exposing their personal network IP address. Since this guide's creation date, a alternative approuch using [Pangolin](https://github.com/fosrl/pangolin) has been created. It's recommended to use Pangolin as it has a better user experience. I will continue maintaining this guide for users looking to utilize the old method
 :::
 
